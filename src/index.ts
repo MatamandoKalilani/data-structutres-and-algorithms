@@ -7,7 +7,7 @@ import binarySearch from "./binary-search";
 
   verbalize({
     func: binarySearch,
-    args: [{ list: [2, 4, 6, 8, 9, 12, 14, 56], item: 12 }],
+    args: [{ list: [2, 4, 6, 8, 12, 14, 56,  80, 90], item: 80 }],
   });
 
   console.log("Finished");

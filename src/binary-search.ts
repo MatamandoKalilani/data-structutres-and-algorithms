@@ -4,21 +4,21 @@ interface BinarySearchArgs {
 }
 
 const binarySearch = ({ list, item }: BinarySearchArgs) => {
-  let beginning = 0;
-  let end = list.length - 1;
+  let windowStart = 0;
+  let windowEnd = list.length - 1;
 
-  while (beginning <= end) {
-    const middle = Math.floor((beginning + end) / 2);
+  while (windowStart <= windowEnd) {
+    const windowMiddle = Math.floor((windowStart + windowEnd) / 2);
 
-    if (list[middle] === item) {
-      return list[middle];
-    } else if (list[middle] < item) {
-      beginning = middle + 1;
+    if (list[windowMiddle] === item) {
+      return `${list[windowMiddle]} Found at Index ${windowMiddle}`;
+    } else if (list[windowMiddle] < item) {
+      windowStart = windowMiddle + 1;
     } else {
-      end = middle - 1;
+      windowEnd = windowMiddle - 1;
     }
   }
-  return null;
+  return `${item} Not Found`;
 };
 
 export default binarySearch;

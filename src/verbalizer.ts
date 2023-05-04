@@ -9,11 +9,13 @@ const verbalize = <F extends (...args: any[]) => any>({
 }: FunctionArgs<F>) => {
   console.log(`Function: ${func.name}`);
   console.log(
-    `Arguments: ${args.map((arg, index) => {
-      return index === args.length - 1
-        ? `${arg.toString()}`
-        : `${arg.toString()}`;
-    })}`
+    `Arguments: ${args
+      .map((arg, index) => {
+        return index === args.length - 1
+          ? `${arg.toString()}`
+          : `${arg.toString()}`;
+      })
+      .toString()}`
   );
   console.log("Running...");
   console.log(`Result: ${func(...args)}`);
