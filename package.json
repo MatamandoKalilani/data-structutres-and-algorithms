@@ -4,8 +4,11 @@
   "description": "Data structures and algorithms",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
   "author": "Matamando Kalilani",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "ts-node-dev": "^2.0.0"
+  }
 }
