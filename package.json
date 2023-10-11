@@ -1,8 +1,8 @@
 {
-  "name": "Initial SWE Interviews Course - Continued",
+  "name": "SWE - data-structures-and-algorithms",
   "version": "1.0.0",
   "description": "",
-  "main": "./out/index.js",
+  "main": "./build/index.js",
   "scripts": {
     "start": "ts-node-dev --respawn --transpile-only src/index.ts"
   },
