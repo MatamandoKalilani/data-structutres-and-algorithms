@@ -1,4 +1,4 @@
-import { Node } from "./node";
+import { Node } from "../common/node";
 
 export class StackLinkedList<N extends any> {
   private first: Node<N> | null = null;

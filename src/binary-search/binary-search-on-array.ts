@@ -3,7 +3,7 @@ interface BinarySearchArgs {
   item: number;
 }
 
-const binarySearch = ({ list, item }: BinarySearchArgs) => {
+const binarySearchOnArray = ({ list, item }: BinarySearchArgs) => {
   let windowStart = 0;
   let windowEnd = list.length - 1;
 
@@ -21,4 +21,4 @@ const binarySearch = ({ list, item }: BinarySearchArgs) => {
   return `${item} Not Found`;
 };
 
-export default binarySearch;
+export default binarySearchOnArray;
