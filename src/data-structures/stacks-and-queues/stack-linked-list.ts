@@ -1,4 +1,4 @@
-import { NodeSinglePointer } from "../common/node-single-pointer";
+import { NodeSinglePointer } from "../../common/node-single-pointer";
 
 export class StackLinkedList<N extends any> {
   private first: NodeSinglePointer<N> | null = null;

@@ -1,4 +1,4 @@
-import { QueueLinkedList } from "../stacks-and-queues/queue-linked-list";
+import { QueueLinkedList } from "../data-structures/stacks-and-queues/queue-linked-list";
 
 export const testQueueLinkedList = () => {
   const numberStack = new QueueLinkedList<number>();

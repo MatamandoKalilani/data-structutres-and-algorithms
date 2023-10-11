@@ -1,9 +1,9 @@
-export class Node<N extends any> {
+export class NodeSinglePointer<N extends any> {
   private _item: N;
 
-  private _next: Node<N> | null = null;
+  private _next: NodeSinglePointer<N> | null = null;
 
-  constructor(item: N, next: Node<N> | null) {
+  constructor(item: N, next: NodeSinglePointer<N> | null) {
     this._item = item;
     this._next = next;
   }
